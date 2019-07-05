@@ -1,0 +1,22 @@
+{
+  "name": "bank_tech_test_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wemsteral/bank-tech-test-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wemsteral/bank-tech-test-js/issues"
+  },
+  "homepage": "https://github.com/wemsteral/bank-tech-test-js#readme"
+}
