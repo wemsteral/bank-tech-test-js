@@ -1,13 +1,19 @@
-function Account() {
-  this.balance = INITIAL_BALANCE;
-}
-
 const INITIAL_BALANCE = 0;
 
-Account.prototype.viewBalance = function() {
-  return this.balance;
-};
+class Account {
+  constructor() {
+    this.balance = INITIAL_BALANCE;
+  }
 
-Account.prototype.deposit = function(amount) {
-  this.balance += amount;
-};
+  viewBalance() {
+    return this.balance;
+  }
+
+  deposit(amount) {
+    this.balance += amount;
+  }
+
+  withdraw(amount) {
+    this.balance -= amount;
+  }
+}
