@@ -1,19 +1,25 @@
+"use strict";
+
 const INITIAL_BALANCE = 0;
 
 class Account {
   constructor() {
-    this.balance = INITIAL_BALANCE;
+    this._balance = INITIAL_BALANCE;
   }
 
-  viewBalance() {
-    return this.balance;
+  get balance() {
+    return this._balance;
   }
 
   deposit(amount) {
-    this.balance += amount;
+    this._balance += amount;
   }
 
   withdraw(amount) {
-    this.balance -= amount;
+    if (this._balance - amount < 0) {
+      throw new Error("Insufficient Funds");
+    } else {
+      this._balance -= amount;
+    }
   }
 }

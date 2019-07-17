@@ -24,5 +24,13 @@ describe("Account", function() {
       account.withdraw(50);
       expect(account.balance).toEqual(50);
     });
+
+    // How to test for errors - take note below!
+
+    it("doesnt allow balance to go below 0", function() {
+      expect(function() {
+        account.withdraw(50);
+      }).toThrow();
+    });
   });
 });
